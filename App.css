@@ -1,0 +1,283 @@
+body{
+  margin: 0;
+  background-image: url("C:\Users\lenovo\Desktop\.vscode\e-dashboard\front-end\src\top-view-dried-raisins-inside-little-pots-grey-surface.jpg");
+  height: 350px;
+  width: 1100px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+
+}
+.nav-ul li{
+  display:inline-block;
+  padding:10px;
+  z-index: 999;
+}
+.nav-ul li:hover{
+  display:inline-block;
+  padding:10px;
+  z-index: 999;
+  font-size: 17px;
+  font-family: 'Verdana', sans-serif;
+  background-color: #c9c084a0;
+}
+.nav-ul li a{
+  color:aliceblue;
+  padding:5px;
+  text-decoration: none;
+  font-family: 'Verdana', sans-serif;
+}
+.nav-ul{
+  width: 1527px;
+  padding:5px;
+  margin:0;
+  background-color: rgba(36, 32, 29, 0.77);
+  font-family: 'Arial', sans-serif;
+}
+.nav-right{
+
+  text-align: right;
+}
+.footer{
+  position:fixed;
+  bottom:0;
+  text-align: center;
+  background-color:rgba(36, 32, 29, 0.77);
+  width:100%;
+  color:aliceblue;
+  animation: slide-in 3s ease-out forwards;
+}
+img[alt="logo"]{
+  height: 38px;
+  width:150px;
+  float:left;
+  margin-top:5px;
+  margin-left:20px;
+  animation: slide-in 1s ease-out forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  font-style: italic; /* Adjust the height as needed */
+}
+.file-input {
+  display: inline-block;
+  padding: 5px 32px;
+  margin-bottom: -20px;
+  background-color: #191f217e;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+
+}
+.product{
+  padding-right:180px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  height: 60vh;
+  font-style: italic;
+  
+
+}
+.search-product-box{
+  width: 350px;
+  margin:18px;
+  border: 2px solid rgb(50, 56, 58);
+  padding-left: 13px;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+
+
+.inputBox{
+  display:block;
+  margin-bottom: 7px; 
+  margin:15px;
+  padding:7px;
+  width:300px;
+  border:2.5px solid rgba(50, 56, 58, 0.83);
+
+}
+.appButton{
+  margin: left 15px ;
+  margin-top: 500px;
+  padding:10px;
+  position: absolute;
+  width:170px;
+  border:2px solid black;
+  cursor:pointer;
+  background-color: #36322ed5;
+  font-weight: 700;
+  border-radius: 5px;
+  color: white;
+}
+.loginButton{
+  margin-left: 2px;
+    padding: 10px;
+    width: 150px;
+    border:2px solid black;
+    cursor: pointer;
+    background-color: #36322ed5;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+
+}
+
+
+.invalid-input{
+color:red;
+margin-top: -13px;
+display: block;
+margin-left: -225px;
+font-size: 10px;
+
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+p{
+  color: rgb(240, 233, 233) ;
+  font-style: italic ;
+  font-size: 38px;
+  height: 23px;
+  font-weight: 700;
+}
+.login{
+  margin-left:30%;
+  margin-top:100px;
+}
+.deleteANDupdate{
+  background-color: #282c34;
+  color: white;
+  cursor:pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3px;
+
+}
+.deleteANDupdate a{
+  background-color: #282c34;
+  color: white;
+  cursor:pointer;
+  border: 1px solid black;
+
+}
+
+
+
+.product-list{
+  text-align: center;
+  margin-top: 50px;
+  font-style: italic;
+  color: #e7edef;
+
+
+}
+.product-list ul li{
+  display:inline-block;
+  border:1px solid rgb(255, 255, 255);
+  padding-left: 0px;
+  padding-right: 0px;
+  width:150px;
+}
+.product-list ul{
+  margin:0;
+  padding-left: 6px;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    width: auto;
+    background-attachment: scroll;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .nav-right {
+    text-align: left;
+  }
+
+  .register,
+  .product {
+    height: auto;
+    padding: 20px;
+  }
+
+  .inputBox,
+  .search-product-box,
+  .appButton,
+  .loginButton {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .login {
+    margin-left: 5%;
+    margin-top: 50px;
+  }
+
+  .product-list ul li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .product-list ul {
+    padding-left: 0;
+  }
+}
